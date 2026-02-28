@@ -128,6 +128,16 @@ Run the server on your PC/laptop and connect from any device on the same Wi-Fi (
 
 ### VPS
 
+#### Quick start (nohup)
+
+The simplest way — just run in the background and disconnect:
+
+```bash
+BASE_URL=http://your-server-ip:7000 nohup uvicorn main:app --host 0.0.0.0 --port 7000 > server.log 2>&1 &
+```
+
+Check logs: `tail -f server.log`. Stop: `kill $(pgrep -f uvicorn)`.
+
 #### systemd
 
 Create `/etc/systemd/system/amonogawa.service`:
