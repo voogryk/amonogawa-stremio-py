@@ -224,7 +224,6 @@ stremio.py           — Stremio protocol response builders
 telegram_stream.py   — Telegram streaming bridge (Pyrogram)
 main.py              — FastAPI server, all endpoints
 auth.py              — One-time Telegram auth script
-scraper.py           — Utility for scraping catalog data
 ```
 
 ## API Endpoints
